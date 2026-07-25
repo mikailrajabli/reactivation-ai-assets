@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soltrack — US Dental Clinics GTM Brief</title>
+<style>
+:root{--bg:#0b0b0d;--panel:#141417;--panel2:#1b1b20;--line:#2a2a31;--text:#ece7db;--dim:#a9a49a;--faint:#6f6b63;--gold:#e7c34e;--gold2:#c9a227;--green:#4ade80;--red:#f87171;--blue:#7cc0ff;--amber:#fbbf24}
+:root[data-theme="light"]{--bg:#f6f4ee;--panel:#fff;--panel2:#f0ede4;--line:#e2ddd0;--text:#20201c;--dim:#5c584f;--faint:#8f8a7f;--gold:#a9871a;--gold2:#8a6d12;--green:#1c9d54;--red:#c23b3b;--blue:#2b6cb0;--amber:#a86a12}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px 80px}
+header{padding:34px 0 14px;border-bottom:1px solid var(--line);margin-bottom:6px}
+.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700}
+h1{font-size:28px;margin:8px 0 4px;letter-spacing:-.01em}.sub{color:var(--dim);font-size:14px}
+.themebtn{position:fixed;top:16px;right:16px;z-index:20;background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:20px;padding:7px 13px;font-size:12px;cursor:pointer}
+nav{position:sticky;top:0;z-index:10;background:var(--bg);display:flex;flex-wrap:wrap;gap:4px;padding:12px 0;border-bottom:1px solid var(--line);margin-bottom:26px}
+nav button{background:transparent;border:1px solid transparent;color:var(--dim);border-radius:9px;padding:7px 12px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap}nav button:hover{color:var(--text)}nav button.on{background:var(--panel);border-color:var(--line);color:var(--gold)}
+section{display:none;animation:fade .25s ease}section.on{display:block}@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+h2{font-size:21px;margin:6px 0 14px;letter-spacing:-.01em}h3{font-size:15px;margin:26px 0 8px;color:var(--gold)}p{margin:0 0 12px}.lead{font-size:16px}
+.grid{display:grid;gap:12px}.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr 1fr 1fr}.g4{grid-template-columns:repeat(4,1fr)}@media(max-width:720px){.g2,.g3,.g4{grid-template-columns:1fr}nav{position:static}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}.stat .n{font-size:26px;font-weight:800;color:var(--gold);letter-spacing:-.02em}.stat .l{font-size:12.5px;color:var(--dim);margin-top:3px}.stat .src{font-size:11px;color:var(--faint);margin-top:6px}.src a{color:var(--faint);text-decoration:underline}
+.pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:20px;border:1px solid;vertical-align:middle}
+.est{color:var(--amber);border-color:color-mix(in srgb,var(--amber) 45%,transparent);background:color-mix(in srgb,var(--amber) 12%,transparent)}
+.good{color:var(--green);border-color:color-mix(in srgb,var(--green) 45%,transparent);background:color-mix(in srgb,var(--green) 12%,transparent)}
+.opinion{border-left:3px solid var(--blue);background:color-mix(in srgb,var(--blue) 7%,transparent);padding:12px 14px;border-radius:0 10px 10px 0;margin:14px 0}.opinion b{color:var(--blue)}
+.danger{border-left:3px solid var(--red);background:color-mix(in srgb,var(--red) 8%,transparent);padding:12px 14px;border-radius:0 10px 10px 0;margin:14px 0}.danger b{color:var(--red)}
+.source{border-left:3px solid var(--gold2);background:color-mix(in srgb,var(--gold) 7%,transparent);padding:12px 14px;border-radius:0 10px 10px 0;margin:14px 0;font-size:14px}
+.tw{overflow-x:auto;margin:14px 0;border:1px solid var(--line);border-radius:12px}table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:520px}th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}th{background:var(--panel2);color:var(--dim);font-size:11.5px;text-transform:uppercase;letter-spacing:.06em}tr:last-child td{border-bottom:none}td .win{color:var(--green);font-weight:700}td .tie{color:var(--amber)}
+ol.ins{padding-left:20px}ol.ins li{margin:8px 0}
+.step{display:flex;gap:12px;margin:10px 0}.step .k{flex:0 0 30px;height:30px;border-radius:50%;background:color-mix(in srgb,var(--gold) 16%,transparent);border:1px solid var(--gold2);color:var(--gold);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:13px}.step .b{flex:1}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:12px 14px;white-space:pre-wrap}
+dl dt{color:var(--gold);font-weight:700;margin-top:12px;font-size:14px}dl dd{margin:2px 0 0;color:var(--dim)}
+.tag{font-size:11px;color:var(--faint);letter-spacing:.05em;text-transform:uppercase}.foot{color:var(--faint);font-size:12px;margin-top:40px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<button class="themebtn" onclick="tg()">◐ theme</button>
+<div class="wrap">
+<header>
+  <div class="eyebrow">Soltrack · deep vertical brief · 1 of 2</div>
+  <h1>US Dental Clinics</h1>
+  <div class="sub">Managed AI front desk (answer · qualify · book) + insurance verification + dormant-patient reactivation · 2026-07-25 · honesty-flagged</div>
+</header>
+<nav id="nav"></nav>
+
+<section id="thesis" class="on">
+  <h2>Thesis</h2>
+  <p class="lead">Dental is the <b>largest, most reachable, most recurring</b> clinic market in the country — but also the <b>most incumbent-saturated</b>. The win is not "an AI that answers the phone" (Weave and Arini already sell that); it is a <b>managed triple wedge</b> the point-solutions don't run end-to-end: capture missed calls, offload the insurance-verification grind, and mine the reactivation goldmine every practice is sitting on. The differentiator is <b>managed + compliant + monitored</b>, the answer to the market's real objection: flaky self-serve bots.</p>
+  <div class="grid g4" style="margin:18px 0">
+    <div class="stat"><div class="n">~135k</div><div class="l">US dental practices · ~202k dentists</div><div class="src">Census CBP · ADA HPI 2024</div></div>
+    <div class="stat"><div class="n">~1 in 3</div><div class="l">new-patient calls missed; 58% of missed = new patients <span class="pill est">vendor-est</span></div><div class="src">Peerlogic</div></div>
+    <div class="stat"><div class="n">800–2,000</div><div class="l">dormant patients per practice — the goldmine</div><div class="src">Clerri / Rework <span class="pill est">vendor-est</span></div></div>
+    <div class="stat"><div class="n">5–15×</div><div class="l">cheaper to reactivate ($10–30) than acquire (~$385)</div><div class="src">Clerri <span class="pill est">vendor-est</span></div></div>
+  </div>
+  <h3>The five things that matter</h3>
+  <ol class="ins">
+    <li><b>Reactivation is the sharpest wedge, not call-answering.</b> A 2,000-patient practice carries ~$240k of dormant hygiene revenue; 35–40% of contacted lapsed patients rebook; a 4-touch campaign recovers 40–80 patients / $40–120k with near-zero acquisition cost <span class="pill est">vendor-est</span>. Everyone sells the phone; almost no one runs the database.</li>
+    <li><b>Insurance verification is a second, dental-only wedge.</b> 75% of practices call it their most time-consuming task; it eats 2–3 hrs/day of front-desk time at ~$7/manual check <span class="pill est">vendor-est</span>. Offloading it is a hard ROI story for larger/DSO buyers.</li>
+    <li><b>The market is a two-motion buy.</b> Owner-dentists fell 85%→73% (2005→2023); ~2 in 3 now practice in groups; DSO affiliation doubled to 16.1% (27% of new grads). Sell point solutions to independents, sell centrally to the ~8,500 DSO-managed practices.</li>
+    <li><b>PMS is a legacy wall — and the moat.</b> Dentrix + Eaglesoft (~35–40% combined) are server-based with no clean API; NexHealth Synchronizer is the de-facto universal booking layer across 20–40 systems. Integration difficulty is exactly the "done-for-you" a clinic won't do itself.</li>
+    <li><b>Saturation is real; managed is the escape.</b> Weave is public ($249M rev); Arini is YC-funded. The point-solution tier is crowded but still seed-stage and self-serve. Win on managed delivery + the reactivation/verification wedges they don't run.</li>
+  </ol>
+  <div class="opinion"><b>Within dental, chase:</b> general dentistry for volume + the recall/reactivation engine (highest call volume, most recurring), and implant/ortho as high-value niche campaigns (one booked case = $3,000–$10,000+). Sell verification depth into multi-location + DSO.</div>
+</section>
+
+<section id="icp">
+  <h2>ICP — who to chase inside dental</h2>
+  <h3>Five tests (kill-switch)</h3>
+  <div class="tw"><table>
+    <tr><th>Test</th><th>Verdict</th><th>Evidence</th></tr>
+    <tr><td>1 · Need</td><td class="win">Pass</td><td>Phone = new patients; recall = recurring revenue. Front desk is core.</td></tr>
+    <tr><td>2 · Pain</td><td class="win">Pass</td><td>~1 in 3 calls missed; front-desk turnover 25–35%/yr, $5–10k to replace. <span class="pill est">vendor-est</span></td></tr>
+    <tr><td>3 · Money</td><td class="win">Pass</td><td>Missed call ~$300–500 first-yr; ~$240k dormant revenue/practice; verification $7/check × 2–3 hrs/day.</td></tr>
+    <tr><td>4 · Demand</td><td class="win">Pass</td><td>Weave $249M rev (public), Arini YC-funded — buyers pay.</td></tr>
+    <tr><td>5 · Permissibility <b>(kill-switch)</b></td><td class="win">Pass</td><td>Scheduling ≠ practice of dentistry; clinical questions escalate to staff. Gated by BAA/TCPA/disclosure (configurational).</td></tr>
+  </table></div>
+  <div class="opinion"><b>Kill-switch does not fire.</b></div>
+  <h3>Sub-segment ranking (5-axis /25)</h3>
+  <p class="tag">Pain · Deal value · TAM/volume · Reachability · Permissibility. Chase ≥18.</p>
+  <div class="tw"><table>
+    <tr><th>#</th><th>Sub-segment</th><th>P</th><th>D</th><th>T</th><th>R</th><th>Pm</th><th>Total</th><th>Note</th></tr>
+    <tr><td>1</td><td><b>General dentistry (independent)</b> ★</td><td>5</td><td>4</td><td>5</td><td>5</td><td>4</td><td class="win">23</td><td>Beachhead. ~159k GPs, highest call + recall volume, reactivation engine. Most saturated → win on managed + database.</td></tr>
+    <tr><td>2</td><td>Orthodontics</td><td>4</td><td>5</td><td>2</td><td>4</td><td>4</td><td class="win">19</td><td>$5–10k case; practices do $1.5–2M/yr. High-value niche campaign.</td></tr>
+    <tr><td>3</td><td>Implant / cosmetic GP</td><td>4</td><td>5</td><td>3</td><td>4</td><td>4</td><td class="win">20</td><td>One booked implant $3–5.5k / full-arch $14–36k. One captured inquiry &gt; a month of our fee.</td></tr>
+    <tr><td>4</td><td>DSO-managed groups</td><td>4</td><td>4</td><td>3</td><td>3</td><td>4</td><td class="win">18</td><td>Central buy, verification + scale story. Longer sales cycle; enterprise expansion.</td></tr>
+    <tr><td>5</td><td>Pediatric</td><td>4</td><td>3</td><td>2</td><td>4</td><td>4</td><td class="tie">17</td><td>Recall-heavy but lower case value. Secondary.</td></tr>
+    <tr><td>6</td><td>Endo / perio / OMS</td><td>3</td><td>4</td><td>2</td><td>4</td><td>4</td><td class="tie">17</td><td>Referral-driven, smaller call volume. Niche only.</td></tr>
+  </table></div>
+  <div class="opinion"><b>Who to chase / where not to lead.</b> Lead on <b>independent general dentistry</b> (the reactivation + missed-call double wedge lands hardest), run <b>implant/ortho</b> as high-ticket niche campaigns, and pursue <b>DSOs</b> as a separate enterprise motion once the independent script is proven. Don't lead with endo/perio/OMS — low call volume, referral-based.</div>
+</section>
+
+<section id="math">
+  <h2>Market &amp; Math</h2>
+  <h3>TAM — the dental universe</h3>
+  <div class="grid g4">
+    <div class="stat"><div class="n">~135,300</div><div class="l">dental establishments</div><div class="src"><a href="https://data.census.gov">Census CBP</a></div></div>
+    <div class="stat"><div class="n">159,562</div><div class="l">general dentists (79%)</div><div class="src"><a href="https://www.ada.org/resources/research/health-policy-institute/dentist-workforce">ADA HPI 2024</a></div></div>
+    <div class="stat"><div class="n">16.1%</div><div class="l">dentists DSO-affiliated (27% of new grads), 2x in a decade</div><div class="src">ADA HPI</div></div>
+    <div class="stat"><div class="n">$189B</div><div class="l">US dental spend 2024, +3.6% real</div><div class="src">ADA HPI</div></div>
+  </div>
+  <p class="tag">Specialists (~21%): ortho 10,830 · pediatric 8,561 · OMS 7,529 · endo 5,745 · perio 5,723 · prostho 3,733. ADSO: 80+ DSOs / 8,500+ practices.</p>
+
+  <h3>Money hook — three leaks per practice</h3>
+  <div class="tw"><table>
+    <tr><th>Leak</th><th>Per-practice size</th><th>Source</th></tr>
+    <tr><td>Missed new-patient calls</td><td>~$300–500 first-yr each × ~1 in 3 missed; 58% of missed are new patients</td><td>Peerlogic <span class="pill est">vendor-est</span></td></tr>
+    <tr><td>Dormant-patient reactivation</td><td>800–2,000 dormant; ~$240k dormant hygiene revenue; 10–15% recoverable = <b>$24–36k/campaign</b></td><td>Clerri / Rework <span class="pill est">vendor-est</span></td></tr>
+    <tr><td>Insurance verification drag</td><td>2–3 hrs/day at ~$7/manual check; dedicated FTE $35–45k/yr</td><td>US Tech Automations <span class="pill est">vendor-est</span></td></tr>
+  </table></div>
+  <div class="opinion"><b>Deal value (for the math):</b> new patient $850–1,300 first-year, <b>~$6,700 LTV</b>; implant case $3–5.5k; ortho case $5–10k. Reactivation costs <b>$10–30/patient vs ~$385 to acquire net-new</b> — the highest-ROI dollar in the practice.</div>
+
+  <h3>Unit economics + pricing</h3>
+  <div class="grid g4">
+    <div class="stat"><div class="n">$1.5–3k/mo</div><div class="l">retainer per practice</div></div>
+    <div class="stat"><div class="n">~$200–500</div><div class="l">infra/client/mo <span class="pill est">est</span></div></div>
+    <div class="stat"><div class="n">~85%</div><div class="l">gross margin templated <span class="pill est">est</span></div></div>
+    <div class="stat"><div class="n">+ NexHealth</div><div class="l">booking-layer cost line (required for PMS write)</div></div>
+  </div>
+  <div class="source"><b>Pricing shape:</b> anchor (multi-location $5k+/mo) · <b>core</b> $1,000–1,500 setup + $1,500–3,000/mo (front desk + reactivation + verification) · kicker $/reactivated patient or $/booked new patient.</div>
+</section>
+
+<section id="offer">
+  <h2>Offer</h2>
+  <div class="grid g2">
+    <div class="card"><h3 style="margin-top:0">↑ Dream outcome</h3><p>"Stop losing patients you already have and already paid for." Name it the <b>Dental Front-Desk OS</b>: every call answered/qualified/booked, your recall list worked, your dormant patients reactivated, and insurance pre-verified before they sit in the chair.</p></div>
+    <div class="card"><h3 style="margin-top:0">↑ Perceived likelihood</h3><p><b>Reactivation-first pilot:</b> "We recover N booked patients from your own dormant list in 30 days before you pay setup." Uses money already in the chart — the lowest-risk possible proof. Managed + monitored, escalates clinical to your team.</p></div>
+    <div class="card"><h3 style="margin-top:0">↓ Time delay</h3><p>Live in days via NexHealth into Dentrix/Eaglesoft/Open Dental; first reactivated booking in week one.</p></div>
+    <div class="card"><h3 style="margin-top:0">↓ Effort</h3><p>Done-for-you: PMS access + recall criteria, we build/host/monitor/verify + carry BAA, 10DLC, disclosure.</p></div>
+  </div>
+  <div class="source"><b>Guarantee with teeth.</b> "We recover a booked patient from your dormant list in 30 days or you don't pay setup." Guarantee the recovered booking (which we control), not their downstream case acceptance.</div>
+  <h3>Differentiation</h3>
+  <div class="tw"><table>
+    <tr><th>Field</th><th>What they are</th><th>Our wedge</th></tr>
+    <tr><td>Point AI receptionists (Arini, Rondah)</td><td>Self-serve call bots</td><td class="win">Managed + reactivation + verification, run for you</td></tr>
+    <tr><td>Comms suites (Weave, RevenueWell)</td><td>Seat + tools you operate</td><td class="win">Done-for-you service, not another dashboard</td></tr>
+    <tr><td>Human answering services</td><td>Per-minute, no database/recall</td><td class="win">24/7 flat cost + database reactivation + PMS write</td></tr>
+  </table></div>
+  <div class="opinion"><b>Sober-buyer adaptation.</b> Dentists are conservative. Lead with signed BAA + "escalates to your staff" + a named local proof + the reactivation ROI (their own money), not AI swagger.</div>
+</section>
+
+<section id="copy">
+  <h2>Copy</h2>
+  <h3>Lead magnet — the leak they can't argue with</h3>
+  <div class="source">The <b>Missed-Call &amp; Recall Leak</b> report: call their line after hours (log what happened), and estimate their dormant-patient revenue from public practice size. Show the leak with their numbers. CTA "want the findings?" — never "book a call." Build it from public data, don't covertly record their live system.</div>
+  <h3>Report-interview outreach (person-led, no pitch)</h3>
+  <div class="mono">Subject: featuring {{ClinicName}} in the report?
+
+Hi {{FirstName}},
+
+I'm putting together a short report on how {{State}} dental practices handle after-hours and missed new-patient calls, since it's where most offices quietly lose patients. {{ClinicName}} came up when I was looking around {{City}}.
+
+Would you be open to a 30 to 40 minute interview for it? No pitch, nothing to buy. I'll send you the finished report on your practice, and the clip is yours to keep.
+
+If you're up for it, just reply and I'll get you scheduled.
+
+{{Mikail / Ahmad}}</div>
+  <h3>5-day follow-up</h3>
+  <div class="step"><div class="k">1</div><div class="b"><b>Day 1</b> invite (above)</div></div>
+  <div class="step"><div class="k">3</div><div class="b"><b>Day 3</b> bump — "same ask, ~30 min on how {{ClinicName}} handles calls + recall"</div></div>
+  <div class="step"><div class="k">5</div><div class="b"><b>Day 5</b> proof — "{{State}} practices we've looked at miss roughly 1 in 3 calls, most after hours. Curious where {{ClinicName}} lands"</div></div>
+  <div class="step"><div class="k">7</div><div class="b"><b>Day 7</b> "wrapping the first round, wanted {{ClinicName}} in it"</div></div>
+  <div class="step"><div class="k">12</div><div class="b"><b>Day 12</b> breakup — "I'll leave it here"</div></div>
+</section>
+
+<section id="play">
+  <h2>Play — 90 days</h2>
+  <div class="opinion"><b>Two motions.</b> Independent general practices = cold email + report-interview (volume). DSOs = a separate, warmer, verification-led enterprise motion (fewer accounts, bigger deals). Don't blend the message.</div>
+  <div class="step"><div class="k">1</div><div class="b"><b>Warm (1–14).</b> Local + St. Petersburg dental pilot → first before/after case study on reactivation (lowest stakes, our own money-in-the-chart proof).</div></div>
+  <div class="step"><div class="k">2</div><div class="b"><b>Cold (15–90).</b> Report-interview + leak magnet to independent GPs by state; open-tracking OFF, verified lists.</div></div>
+  <div class="step"><div class="k">3</div><div class="b"><b>Content (always on).</b> Missed-call + turnover + reactivation stories on LinkedIn, repost X.</div></div>
+  <div class="step"><div class="k">4</div><div class="b"><b>Paid (last).</b> Only after a validated script + 3:1 LTGP:CAC.</div></div>
+  <div class="tw"><table>
+    <tr><th>Window</th><th>Goal</th><th>Move</th></tr>
+    <tr><td>1–30 · Proof</td><td>5 case studies</td><td>Lead reactivation pilots (their own dormant list = fastest proof).</td></tr>
+    <tr><td>31–60 · Automate</td><td>500–1,000 touches/day</td><td>Tool the pipeline; open the DSO conversation.</td></tr>
+    <tr><td>61–90 · Optimise</td><td>10 clients</td><td>Not booking → fix magnet. Not closing → fix the interview→report loop.</td></tr>
+  </table></div>
+</section>
+
+<section id="risks">
+  <h2>Honest risks</h2>
+  <div class="danger"><b>Saturation is the #1 dental risk.</b> Weave (public, $249M), Arini (YC), RevenueWell, NexHealth, Dental Intelligence, Peerlogic all crowd the space, and comms suites can bundle AI into an existing seat. Mitigation: don't compete on "AI answers calls" — win on managed delivery + the reactivation + verification wedges they run as features, not as a done-for-you service.</div>
+  <div class="danger"><b>Regulatory — must-do.</b> BAA required with each practice + every subprocessor (Retell signs BAAs). Recall/reactivation texts need TCPA consent + 10DLC (healthcare high-scrutiny) → scope to the practice's own consented patients. Two-party recording consent (~15 states) + AI disclosure (CA AB 2905, $500/undisclosed call) → build disclosure into the opener.</div>
+  <div class="opinion"><b>Delivery "grift" risk.</b> Owners publicly distrust flaky AI bots that plateau. Our entire model (human-tuned, monitored, escalates) is the answer — but if delivery slips we become the objection.</div>
+  <div class="opinion"><b>Data quality.</b> Nearly every dental missed-call/recall/CAC stat is vendor-published; the only clean independent anchors are ~80% of callers won't leave a voicemail (CBS/Vonage) and after-hours emergency demand exists (Kofina 2022, J Dental Ed). Pitch with the prospect's OWN numbers from the leak-finder.</div>
+  <div class="source"><b>Highest-leverage move.</b> Land one independent GP lighthouse with a recovered-revenue number from their own dormant list. Reactivation proof is faster and cheaper to produce than call-capture proof, and it's the wedge no incumbent runs as a service.</div>
+</section>
+
+<section id="glossary">
+  <h2>Glossary</h2>
+  <div class="mono">Inbound call ─▶ AI answers (+ AI disclosure) ─▶ qualifies (new vs existing, insurance) ─▶ books into PMS via NexHealth ─▶ clinical/urgent? ─▶ escalate to staff
+Recall/dormant list ─▶ consented reactivation text/call ─▶ rebook hygiene ─▶ associated restorative revenue
+Insurance ─▶ AI pre-verifies eligibility before the visit</div>
+  <dl>
+    <dt>PMS</dt><dd>Practice Management System — Dentrix, Eaglesoft, Open Dental, Curve, Denticon, tab32. The AI must write appointments into it.</dd>
+    <dt>NexHealth Synchronizer</dt><dd>The universal integration layer that reads/writes appointments across 20–40 PMS in real time. The de-facto booking dependency.</dd>
+    <dt>DSO</dt><dd>Dental Support Organization — a group managing many practices centrally. 16.1% of dentists; the enterprise buy.</dd>
+    <dt>Recall / recare</dt><dd>Routine hygiene re-appointment (usually every 6 months). The recurring-revenue engine.</dd>
+    <dt>Active patient</dt><dd>Industry convention: ≥1 visit in the past 18 months. Everyone else is "dormant" — the reactivation pool.</dd>
+    <dt>Insurance verification</dt><dd>Confirming a patient's coverage/eligibility before treatment. 2–3 hrs/day of front-desk time; a dental-only AI wedge.</dd>
+    <dt>Case acceptance</dt><dd>The % of proposed treatment a patient agrees to. Where implant/cosmetic LTV is won.</dd>
+    <dt>PHI · BAA</dt><dd>Protected Health Info · Business Associate Agreement — required because the AI handles patient data.</dd>
+    <dt>TCPA · 10DLC</dt><dd>Consent law + A2P texting registration governing recall/reactivation messages.</dd>
+  </dl>
+  <div class="foot">Structure/workforce figures from ADA Health Policy Institute, Census CBP, ADSO (primary). Missed-call/recall/CAC/LTV figures are largely vendor-published call-analytics data (Peerlogic, Clerri, Macbach, Ainora), flagged <span class="pill est">vendor-est</span>; independent anchors: CBS/Vonage voicemail behavior, Kofina 2022 (J Dental Ed). Internal strategy document.</div>
+</section>
+</div>
+<script>
+var TABS=[["thesis","Thesis"],["icp","ICP"],["math","Market & Math"],["offer","Offer"],["copy","Copy"],["play","Play"],["risks","Honest Risks"],["glossary","Glossary"]];
+var nav=document.getElementById('nav');
+TABS.forEach(function(t,i){var b=document.createElement('button');b.textContent=t[1];b.className=i===0?'on':'';b.onclick=function(){go(t[0],b)};nav.appendChild(b)});
+function go(id,btn){document.querySelectorAll('section').forEach(function(s){s.classList.toggle('on',s.id===id)});document.querySelectorAll('#nav button').forEach(function(x){x.classList.remove('on')});btn.classList.add('on');window.scrollTo(0,0)}
+function tg(){var r=document.documentElement;var n=r.getAttribute('data-theme')==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('mi-theme',n)}catch(e){}}
+(function(){try{var s=localStorage.getItem('mi-theme');if(s)document.documentElement.setAttribute('data-theme',s);else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches)document.documentElement.setAttribute('data-theme','light')}catch(e){}})();
+</script>
+</body>
+</html>

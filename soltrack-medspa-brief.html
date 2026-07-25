@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soltrack — US Med Spas GTM Brief</title>
+<style>
+:root{--bg:#0b0b0d;--panel:#141417;--panel2:#1b1b20;--line:#2a2a31;--text:#ece7db;--dim:#a9a49a;--faint:#6f6b63;--gold:#e7c34e;--gold2:#c9a227;--green:#4ade80;--red:#f87171;--blue:#7cc0ff;--amber:#fbbf24}
+:root[data-theme="light"]{--bg:#f6f4ee;--panel:#fff;--panel2:#f0ede4;--line:#e2ddd0;--text:#20201c;--dim:#5c584f;--faint:#8f8a7f;--gold:#a9871a;--gold2:#8a6d12;--green:#1c9d54;--red:#c23b3b;--blue:#2b6cb0;--amber:#a86a12}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px 80px}
+header{padding:34px 0 14px;border-bottom:1px solid var(--line);margin-bottom:6px}
+.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700}
+h1{font-size:28px;margin:8px 0 4px;letter-spacing:-.01em}.sub{color:var(--dim);font-size:14px}
+.themebtn{position:fixed;top:16px;right:16px;z-index:20;background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:20px;padding:7px 13px;font-size:12px;cursor:pointer}
+nav{position:sticky;top:0;z-index:10;background:var(--bg);display:flex;flex-wrap:wrap;gap:4px;padding:12px 0;border-bottom:1px solid var(--line);margin-bottom:26px}
+nav button{background:transparent;border:1px solid transparent;color:var(--dim);border-radius:9px;padding:7px 12px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap}nav button:hover{color:var(--text)}nav button.on{background:var(--panel);border-color:var(--line);color:var(--gold)}
+section{display:none;animation:fade .25s ease}section.on{display:block}@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+h2{font-size:21px;margin:6px 0 14px;letter-spacing:-.01em}h3{font-size:15px;margin:26px 0 8px;color:var(--gold)}p{margin:0 0 12px}.lead{font-size:16px}
+.grid{display:grid;gap:12px}.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr 1fr 1fr}.g4{grid-template-columns:repeat(4,1fr)}@media(max-width:720px){.g2,.g3,.g4{grid-template-columns:1fr}nav{position:static}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}.stat .n{font-size:26px;font-weight:800;color:var(--gold);letter-spacing:-.02em}.stat .l{font-size:12.5px;color:var(--dim);margin-top:3px}.stat .src{font-size:11px;color:var(--faint);margin-top:6px}.src a{color:var(--faint);text-decoration:underline}
+.pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:20px;border:1px solid;vertical-align:middle}
+.est{color:var(--amber);border-color:color-mix(in srgb,var(--amber) 45%,transparent);background:color-mix(in srgb,var(--amber) 12%,transparent)}
+.good{color:var(--green);border-color:color-mix(in srgb,var(--green) 45%,transparent);background:color-mix(in srgb,var(--green) 12%,transparent)}
+.opinion{border-left:3px solid var(--blue);background:color-mix(in srgb,var(--blue) 7%,transparent);padding:12px 14px;border-radius:0 10px 10px 0;margin:14px 0}.opinion b{color:var(--blue)}
+.danger{border-left:3px solid var(--red);background:color-mix(in srgb,var(--red) 8%,transparent);padding:12px 14px;border-radius:0 10px 10px 0;margin:14px 0}.danger b{color:var(--red)}
+.source{border-left:3px solid var(--gold2);background:color-mix(in srgb,var(--gold) 7%,transparent);padding:12px 14px;border-radius:0 10px 10px 0;margin:14px 0;font-size:14px}
+.tw{overflow-x:auto;margin:14px 0;border:1px solid var(--line);border-radius:12px}table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:520px}th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}th{background:var(--panel2);color:var(--dim);font-size:11.5px;text-transform:uppercase;letter-spacing:.06em}tr:last-child td{border-bottom:none}td .win{color:var(--green);font-weight:700}td .tie{color:var(--amber)}
+ol.ins{padding-left:20px}ol.ins li{margin:8px 0}
+.step{display:flex;gap:12px;margin:10px 0}.step .k{flex:0 0 30px;height:30px;border-radius:50%;background:color-mix(in srgb,var(--gold) 16%,transparent);border:1px solid var(--gold2);color:var(--gold);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:13px}.step .b{flex:1}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:12px 14px;white-space:pre-wrap}
+dl dt{color:var(--gold);font-weight:700;margin-top:12px;font-size:14px}dl dd{margin:2px 0 0;color:var(--dim)}
+.tag{font-size:11px;color:var(--faint);letter-spacing:.05em;text-transform:uppercase}.foot{color:var(--faint);font-size:12px;margin-top:40px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<button class="themebtn" onclick="tg()">◐ theme</button>
+<div class="wrap">
+<header>
+  <div class="eyebrow">Soltrack · deep vertical brief · 2 of 2</div>
+  <h1>US Med Spas</h1>
+  <div class="sub">Managed AI front desk (answer · qualify · book) + no-show recovery + dormant-client reactivation · 2026-07-25 · honesty-flagged</div>
+</header>
+<nav id="nav"></nav>
+
+<section id="thesis" class="on">
+  <h2>Thesis</h2>
+  <p class="lead">Med spas are the <b>beachhead</b>. The segment is growing ~18%/yr, the average location does <b>$1.4M</b>, 81% are single-location independents owned by nurses/entrepreneurs on cheap software, and the enterprise players (Boulevard, Zenoti) only bolt AI onto seats those independents can't afford. The exact thing no <b>funded</b> competitor sells is our position: a <b>managed, aesthetics-dedicated, done-for-you front desk + database reactivation service</b>. And the regulation actually helps us — the law already puts scheduling/intake/marketing on the non-clinical <b>MSO side of the wall</b>, which is precisely where an AI front desk sits.</p>
+  <div class="grid g4" style="margin:18px 0">
+    <div class="stat"><div class="n">~10,500</div><div class="l">US med spas · +17.8%/yr · $1.4M avg revenue</div><div class="src">AmSpa 2024</div></div>
+    <div class="stat"><div class="n">81% / 3%</div><div class="l">single-location · PE-owned — a fragmented independent market</div><div class="src">AmSpa 2024</div></div>
+    <div class="stat"><div class="n">~$9,000</div><div class="l">LTV of an injectable client (~5 yrs) <span class="pill est">vendor-est</span></div><div class="src">Kōvly / Dean Garland</div></div>
+    <div class="stat"><div class="n">~$230k/yr</div><div class="l">lost to a 15% no-show rate at $527/visit <span class="pill est">est on AmSpa</span></div><div class="src">AmSpa anchor</div></div>
+  </div>
+  <h3>The five things that matter</h3>
+  <ol class="ins">
+    <li><b>The whitespace is our exact offer.</b> Boulevard ($80M), Zenoti ($1.5B), Moxie, Mangomint are self-serve software; Eva/Clara answer the phone but don't run reactivation; Lani is the closest managed model but multi-vertical and unfunded. Nobody funded sells "managed AI front desk <i>plus</i> database reactivation, purpose-built for med spas." That is the position.</li>
+    <li><b>Ride the calendar, don't replace it.</b> Incumbents own the system of record (booking + EMR). The winning pattern (already how Clara operates) is to plug on top of Boulevard / Vagaro / Jane / AestheticsPro, not rip them out.</li>
+    <li><b>The leak is enormous and multi-part.</b> 20–35% of calls missed, 12–22% no-shows (~$500+ per empty chair), 34–40% of bookings after hours skewing to the highest spenders <span class="pill est">vendor-est</span>. Three recoverable dollars per spa: missed calls, no-shows, and dormant clients.</li>
+    <li><b>Reactivation has ~45:1 economics.</b> A client LTV ~$9,000 against a ~$200 CAC; reactivating a lapsed client costs 5–25× less than acquiring one and returns 3–8×. Most spas sit on lapsed lists nobody works.</li>
+    <li><b>GLP-1 + the Moxie wave = a rising tide of new, understaffed spas.</b> 72% of aesthetic clinics now offer weight-loss meds (a new high-urgency inbound stream), and Moxie is minting thousands of nurse-founded spas that all need reception + reactivation on day one.</li>
+  </ol>
+  <div class="opinion"><b>Lighter compliance than dental.</b> A cash-pay, cosmetic-only spa may not even be a HIPAA "covered entity," and the front desk is squarely on the MSO/non-clinical side. Permissibility is HIGH — the only wall is: the AI never performs the good-faith exam or gives clinical advice.</div>
+</section>
+
+<section id="icp">
+  <h2>ICP — who to chase inside med spas</h2>
+  <h3>Five tests (kill-switch)</h3>
+  <div class="tw"><table>
+    <tr><th>Test</th><th>Verdict</th><th>Evidence</th></tr>
+    <tr><td>1 · Need</td><td class="win">Pass</td><td>High-ticket cosmetic buyers book by phone/DM after hours; the front desk is the revenue gate.</td></tr>
+    <tr><td>2 · Pain</td><td class="win">Pass</td><td>20–35% calls missed, 12–22% no-shows, 8-person teams so one lost receptionist = 1/8 of staff. <span class="pill est">vendor-est</span></td></tr>
+    <tr><td>3 · Money</td><td class="win">Pass</td><td>~$500+ per empty chair, ~$230k/yr at 15% no-show, ~$9k client LTV, reactivation 3–8× return.</td></tr>
+    <tr><td>4 · Demand</td><td class="win">Pass</td><td>Boulevard $80M/$800M, Zenoti $1.5B, Moxie $10M+ — buyers pay handsomely.</td></tr>
+    <tr><td>5 · Permissibility <b>(kill-switch)</b></td><td class="win">Pass (High)</td><td>Front desk = MSO/non-clinical side (CPOM). Cash-pay cosmetic often outside HIPAA "covered entity." AI never does the good-faith exam.</td></tr>
+  </table></div>
+  <div class="opinion"><b>Kill-switch does not fire — and permissibility is higher than dental.</b></div>
+  <h3>Sub-segment ranking (5-axis /25)</h3>
+  <p class="tag">Pain · Deal value · TAM/volume · Reachability · Permissibility. Chase ≥18.</p>
+  <div class="tw"><table>
+    <tr><th>#</th><th>Sub-segment</th><th>P</th><th>D</th><th>T</th><th>R</th><th>Pm</th><th>Total</th><th>Note</th></tr>
+    <tr><td>1</td><td><b>Independent single-location, injectable-led</b> ★</td><td>5</td><td>5</td><td>4</td><td>5</td><td>5</td><td class="win">24</td><td>Beachhead. ~9,500 targets on cheap CRMs (AestheticsPro/Vagaro/Pabau), underserved by Boulevard/Zenoti native AI, feel the leak most.</td></tr>
+    <tr><td>2</td><td>Medical weight-loss / GLP-1-led</td><td>5</td><td>4</td><td>3</td><td>5</td><td>4</td><td class="win">21</td><td>New high-urgency inbound stream (72% of clinics offer it), monthly-refill touchpoints. Rising fast.</td></tr>
+    <tr><td>3</td><td>Multi-location independent (2–9)</td><td>4</td><td>5</td><td>3</td><td>4</td><td>4</td><td class="win">20</td><td>Bigger deals, more chairs to fill; longer cycle. Expansion accounts.</td></tr>
+    <tr><td>4</td><td>Membership-model spas</td><td>4</td><td>5</td><td>2</td><td>4</td><td>5</td><td class="win">20</td><td>3.5× LTV, recurring; reactivation + rebooking fit is perfect.</td></tr>
+    <tr><td>5</td><td>Laser/body-only boutiques</td><td>3</td><td>3</td><td>3</td><td>4</td><td>5</td><td class="tie">18</td><td>Lower ticket, more price-shopping. Secondary.</td></tr>
+    <tr><td>—</td><td>National franchises (Milan, LaserAway)</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td class="tie">skip</td><td>Run their own contact centers. Not our buyer.</td></tr>
+  </table></div>
+  <div class="opinion"><b>Who to chase / where not to lead.</b> Lead on <b>independent single-location injectable-led spas</b> (the pain + reachability + permissibility all peak, and the Dermis channel is warm here), fold in <b>GLP-1 / weight-loss</b> spas as a fast-rising cut, and pursue <b>multi-location + membership</b> spas as higher-ACV expansion. Skip national franchises.</div>
+</section>
+
+<section id="math">
+  <h2>Market &amp; Math</h2>
+  <h3>TAM — the med-spa universe</h3>
+  <div class="grid g4">
+    <div class="stat"><div class="n">~10,500</div><div class="l">med spas 2023, +17.8%/yr</div><div class="src"><a href="https://www.americanmedspa.org/news/2024-medical-spa-state-of-the-industry-executive-report-recap/">AmSpa 2024</a></div></div>
+    <div class="stat"><div class="n">$1.4M</div><div class="l">avg revenue/location; $527/visit; 245 visits/mo</div><div class="src">AmSpa 2024</div></div>
+    <div class="stat"><div class="n">~$6.9B</div><div class="l">US market 2024 · 13.7% CAGR</div><div class="src"><a href="https://www.grandviewresearch.com/horizon/outlook/medical-spa-market/united-states">Grand View</a></div></div>
+    <div class="stat"><div class="n">45–55%</div><div class="l">of revenue is injectables (Botox ~28%)</div><div class="src">AmSpa/ScaleHaven <span class="pill est">vendor-est</span></div></div>
+  </div>
+  <p class="tag">Structure: 81% single-location, 3% PE, 67% non-MD owned, ~8 staff/location. Top 10 chains hold &lt;8% of locations → ~9,500 independent targets. GLP-1 offered by 72% of clinics.</p>
+
+  <h3>Money hook — three leaks per spa</h3>
+  <div class="tw"><table>
+    <tr><th>Leak</th><th>Per-spa size</th><th>Basis</th></tr>
+    <tr><td>Missed calls</td><td>20–35% missed; each unanswered inquiry ≈ <b>$158</b> expected immediate (0.30 × $527)</td><td>AmSpa anchor + <span class="pill est">est</span></td></tr>
+    <tr><td>No-shows</td><td>12–22% no-show; ~$500+ per empty chair; <b>~$230k/yr</b> at 15% (245 × .15 × $527 × 12)</td><td>AmSpa anchor + <span class="pill est">est</span></td></tr>
+    <tr><td>Dormant reactivation</td><td>400 lapsed clients → <b>$20–36k/campaign</b>, 3–8× return, 5–25× cheaper than acquisition</td><td>Ainora <span class="pill est">vendor-est</span></td></tr>
+  </table></div>
+  <div class="danger"><b>Honesty flag.</b> The widely-repeated "$50k–$150k/yr per med spa, per AmSpa" no-show figure is <b>not in AmSpa's actual report</b> — drop that attribution. Use the AmSpa-anchored estimate above ($527/visit × your own no-show %) so it survives a sophisticated owner's scrutiny.</div>
+
+  <h3>Unit economics + pricing</h3>
+  <div class="grid g4">
+    <div class="stat"><div class="n">$4–5k/mo</div><div class="l">retainer per spa (premium segment)</div></div>
+    <div class="stat"><div class="n">~$9k / ~$200</div><div class="l">client LTV vs CAC → ~45:1 <span class="pill est">est</span></div></div>
+    <div class="stat"><div class="n">~85–90%</div><div class="l">gross margin templated <span class="pill est">est</span></div></div>
+    <div class="stat"><div class="n">ride-on-top</div><div class="l">integrate Boulevard/Vagaro/Jane, don't replace</div></div>
+  </div>
+  <div class="source"><b>Pricing shape:</b> anchor (multi-location $7.5k+/mo) · <b>core</b> $1,000–2,500 setup + $4,000–5,000/mo (front desk + no-show recovery + reactivation) · kicker $/reactivated client or $/recovered no-show.</div>
+</section>
+
+<section id="offer">
+  <h2>Offer</h2>
+  <div class="grid g2">
+    <div class="card"><h3 style="margin-top:0">↑ Dream outcome</h3><p>"Fill every chair and stop losing the clients you already have." Name it the <b>Med Spa Front-Desk OS</b>: every call/DM answered and booked 24/7, no-shows recovered with confirmations + waitlist, and lapsed clients reactivated — while you inject.</p></div>
+    <div class="card"><h3 style="margin-top:0">↑ Perceived likelihood</h3><p><b>Reactivation-first pilot</b> on their own lapsed list: "we recover N booked clients in 30 days before you pay setup." Managed + monitored, plugged into your existing Boulevard/Vagaro — the answer to "the last AI bot was a flaky mess."</p></div>
+    <div class="card"><h3 style="margin-top:0">↓ Time delay</h3><p>Live in 24–48h on top of your current calendar; first recovered booking in week one.</p></div>
+    <div class="card"><h3 style="margin-top:0">↓ Effort</h3><p>Done-for-you: calendar access + service menu, we build/host/monitor and carry MSO-side compliance (TCPA, 10DLC, AI + recording disclosure).</p></div>
+  </div>
+  <div class="source"><b>Guarantee with teeth.</b> "We recover a booked client from your lapsed list in 30 days or you don't pay setup." Guarantee the recovered booking (which we control), not their close on the chair.</div>
+  <h3>Differentiation</h3>
+  <div class="tw"><table>
+    <tr><th>Field</th><th>What they are</th><th>Our wedge</th></tr>
+    <tr><td>Platforms (Boulevard, Zenoti, Mangomint)</td><td>Self-serve software you configure + run</td><td class="win">Done-for-you managed service, rides on top of them</td></tr>
+    <tr><td>AI receptionists (Eva, Clara)</td><td>Answer the phone; no reactivation engine</td><td class="win">Front desk <b>+</b> database reactivation as one service</td></tr>
+    <tr><td>Lani AI (closest)</td><td>Managed front desk + reactivation, multi-vertical, unfunded</td><td class="win">Aesthetics-dedicated + the Dermis channel + local proof</td></tr>
+    <tr><td>Moxie</td><td>Done-for-you launch/compliance, not a 24/7 phone agent</td><td class="win">We are the phone + reactivation layer they don't run</td></tr>
+  </table></div>
+  <div class="opinion"><b>Buyer note.</b> Med-spa owners are marketing-literate and respond to premium, outcome-led framing — you can be bolder than with dentists. Lead with recovered revenue + "plugs into your Boulevard," not "AI."</div>
+</section>
+
+<section id="copy">
+  <h2>Copy</h2>
+  <h3>Lead magnet</h3>
+  <div class="source">The <b>Empty-Chair &amp; Missed-Call Leak</b> report: call/DM their spa after hours, log the response, and estimate their no-show + lapsed-client leak at $527/visit. Show it with their numbers. CTA "want the findings?" not "book a call."</div>
+  <h3>Report-interview outreach (person-led, no pitch)</h3>
+  <div class="mono">Subject: featuring {{ClinicName}} in the report?
+
+Hi {{FirstName}},
+
+I'm putting together a short report on how {{State}} med spas handle after-hours booking, missed calls, and no-shows, since it's where a lot of high-ticket clients quietly slip away. {{ClinicName}} came up when I was looking around {{City}}.
+
+Would you be open to a 30 to 40 minute interview for it? No pitch, nothing to buy. I'll send you the finished report on your spa, and the clip is yours to keep.
+
+If you're up for it, just reply and I'll get you scheduled.
+
+{{Mikail / Ahmad}}</div>
+  <h3>5-day follow-up</h3>
+  <div class="step"><div class="k">1</div><div class="b"><b>Day 1</b> invite (above)</div></div>
+  <div class="step"><div class="k">3</div><div class="b"><b>Day 3</b> bump</div></div>
+  <div class="step"><div class="k">5</div><div class="b"><b>Day 5</b> proof — "{{State}} spas we've looked at run 15–20% no-shows and miss ~1 in 3 calls. Curious where {{ClinicName}} lands"</div></div>
+  <div class="step"><div class="k">7</div><div class="b"><b>Day 7</b> "wrapping the first round, wanted {{ClinicName}} in it"</div></div>
+  <div class="step"><div class="k">12</div><div class="b"><b>Day 12</b> breakup</div></div>
+</section>
+
+<section id="play">
+  <h2>Play — 90 days</h2>
+  <div class="opinion"><b>Independent-first.</b> Lead cold email + report-interview at single-location injectable spas by state; ignore franchises. Use the warm Dermis channel for the first case studies.</div>
+  <div class="step"><div class="k">1</div><div class="b"><b>Warm (1–14).</b> Dermis + local spas → first reactivation case study on their own lapsed list (fastest, lowest-stakes proof).</div></div>
+  <div class="step"><div class="k">2</div><div class="b"><b>Cold (15–90).</b> Report-interview + leak magnet to independent spas by state; open-tracking OFF, verified lists, GLP-1 spas as a hot cut.</div></div>
+  <div class="step"><div class="k">3</div><div class="b"><b>Content (always on).</b> No-show + missed-call + reactivation stories on LinkedIn, repost X.</div></div>
+  <div class="step"><div class="k">4</div><div class="b"><b>Paid (last).</b> After a validated script + 3:1 LTGP:CAC.</div></div>
+  <div class="tw"><table>
+    <tr><th>Window</th><th>Goal</th><th>Move</th></tr>
+    <tr><td>1–30 · Proof</td><td>5 case studies</td><td>Reactivation pilots on their own lapsed lists; Dermis-warm intros.</td></tr>
+    <tr><td>31–60 · Automate</td><td>500–1,000 touches/day</td><td>Tool the pipeline; add the GLP-1 spa segment.</td></tr>
+    <tr><td>61–90 · Optimise</td><td>10 clients</td><td>Not booking → fix magnet. Not closing → fix the interview→report loop.</td></tr>
+  </table></div>
+</section>
+
+<section id="risks">
+  <h2>Honest risks</h2>
+  <div class="danger"><b>Enterprise bundle risk.</b> Boulevard (fresh $80M for AI) and Zenoti (native AI receptionist) can bundle AI reception into a seat their multi-location customers already pay for. Mitigation: own the independent single-location segment they underserve, ride on top of their calendar, and win on managed reactivation they don't run.</div>
+  <div class="danger"><b>Regulatory guardrails (process, not blockers).</b> Never let the AI perform or imply the good-faith exam or give clinical advice (CA AB 489 bars implying a license). Split TCPA consent: reminders = express consent, reactivation/promo = <b>written</b> consent; register 10DLC (healthcare = high scrutiny). AI + recording disclosure on every call. HIPAA-grade hygiene even where cash-pay escapes "covered entity."</div>
+  <div class="opinion"><b>Delivery "grift" risk.</b> Owners have been burned by flaky AI bots. Managed + monitored + rides-on-your-calendar is the answer; slipping delivery makes us the objection.</div>
+  <div class="opinion"><b>Data quality.</b> The AmSpa per-spa revenue ($1.4M) and $527/visit are gold; the no-show/missed-call/reactivation percentages are vendor-published — present as ranges and lead with the prospect's own numbers. The 5-minute rule is <b>MIT/Oldroyd 2007</b>, not Harvard (HBR 2011 is the 42-hour figure) — name it right.</div>
+  <div class="source"><b>Highest-leverage move.</b> Land one independent injectable-spa lighthouse with a recovered-revenue number from its own lapsed list, integrated on top of its existing Boulevard/Vagaro. That single proof unlocks the whitespace no funded competitor occupies.</div>
+</section>
+
+<section id="glossary">
+  <h2>Glossary</h2>
+  <div class="mono">Inbound call/DM ─▶ AI answers (+ AI + recording disclosure) ─▶ qualifies (service, budget, availability) ─▶ books into Boulevard/Vagaro/Jane ─▶ clinical question? ─▶ escalate to provider
+No-show risk ─▶ confirmations + waitlist backfill ─▶ chair filled
+Lapsed client ─▶ consented reactivation text/call ─▶ rebook
+[Clinical wall] good-faith exam + injection = licensed provider only — AI never crosses it</div>
+  <dl>
+    <dt>Injectables</dt><dd>Botox/neuromodulators + dermal fillers — 45–55% of med-spa revenue.</dd>
+    <dt>Good-faith exam (GFE)</dt><dd>The provider exam required before any injectable/laser. A clinical act (MD/NP/PA only) the AI must never perform or imply.</dd>
+    <dt>Medical director</dt><dd>The licensed physician a med spa operates under. 74% are non-core-specialists.</dd>
+    <dt>CPOM · MSO</dt><dd>Corporate Practice of Medicine doctrine · Management Services Organization. The PC holds clinical care; the MSO (non-physician-ownable) runs front desk/scheduling/marketing — where the AI legally sits.</dd>
+    <dt>No-show</dt><dd>Booked client who doesn't arrive. 12–22%; each empty chair ~$500+.</dd>
+    <dt>Membership</dt><dd>Monthly plan (~$150/mo) that lifts visit frequency 1.7→3.0 and LTV ~3.5×.</dd>
+    <dt>GLP-1</dt><dd>Weight-loss meds (semaglutide/tirzepatide). Offered by 72% of clinics — a new high-urgency inbound stream.</dd>
+    <dt>Boulevard / Zenoti / Vagaro / AestheticsPro</dt><dd>The booking/CRM systems of record. We integrate on top, we don't replace.</dd>
+    <dt>TCPA · 10DLC</dt><dd>Consent law + A2P texting registration. Reminders = express consent; reactivation/marketing = written consent.</dd>
+  </dl>
+  <div class="foot">Anchor figures (per-spa revenue $1.4M, $527/visit, structure) from AmSpa 2024 State of the Industry (primary survey). Ticket/LTV/CAC/no-show/missed-call/reactivation figures are vendor/agency-published, flagged <span class="pill est">vendor-est</span> — present as ranges. Regulatory from law-firm commentary + statute (CPOM/MSO, CA AB 489, TCPA 47 CFR 64.1200, AmSpa state guides) — confirm per state with a healthcare attorney. Internal strategy document.</div>
+</section>
+</div>
+<script>
+var TABS=[["thesis","Thesis"],["icp","ICP"],["math","Market & Math"],["offer","Offer"],["copy","Copy"],["play","Play"],["risks","Honest Risks"],["glossary","Glossary"]];
+var nav=document.getElementById('nav');
+TABS.forEach(function(t,i){var b=document.createElement('button');b.textContent=t[1];b.className=i===0?'on':'';b.onclick=function(){go(t[0],b)};nav.appendChild(b)});
+function go(id,btn){document.querySelectorAll('section').forEach(function(s){s.classList.toggle('on',s.id===id)});document.querySelectorAll('#nav button').forEach(function(x){x.classList.remove('on')});btn.classList.add('on');window.scrollTo(0,0)}
+function tg(){var r=document.documentElement;var n=r.getAttribute('data-theme')==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('mi-theme',n)}catch(e){}}
+(function(){try{var s=localStorage.getItem('mi-theme');if(s)document.documentElement.setAttribute('data-theme',s);else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches)document.documentElement.setAttribute('data-theme','light')}catch(e){}})();
+</script>
+</body>
+</html>
