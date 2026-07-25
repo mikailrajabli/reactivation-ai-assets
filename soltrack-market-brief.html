@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soltrack — US Aesthetic & Dental Clinics GTM Brief</title>
+<style>
+:root{
+  --bg:#0b0b0d; --panel:#141417; --panel2:#1b1b20; --line:#2a2a31;
+  --text:#ece7db; --dim:#a9a49a; --faint:#6f6b63;
+  --gold:#e7c34e; --gold2:#c9a227; --green:#4ade80; --red:#f87171; --blue:#7cc0ff; --amber:#fbbf24;
+}
+:root[data-theme="light"]{
+  --bg:#f6f4ee; --panel:#ffffff; --panel2:#f0ede4; --line:#e2ddd0;
+  --text:#20201c; --dim:#5c584f; --faint:#8f8a7f;
+  --gold:#a9871a; --gold2:#8a6d12; --green:#1c9d54; --red:#c23b3b; --blue:#2b6cb0; --amber:#a86a12;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px 80px}
+header{padding:34px 0 14px;border-bottom:1px solid var(--line);margin-bottom:6px}
+.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700}
+h1{font-size:28px;margin:8px 0 4px;letter-spacing:-.01em}
+.sub{color:var(--dim);font-size:14px}
+.themebtn{position:fixed;top:16px;right:16px;z-index:20;background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:20px;padding:7px 13px;font-size:12px;cursor:pointer}
+nav{position:sticky;top:0;z-index:10;background:var(--bg);display:flex;flex-wrap:wrap;gap:4px;padding:12px 0;border-bottom:1px solid var(--line);margin-bottom:26px}
+nav button{background:transparent;border:1px solid transparent;color:var(--dim);border-radius:9px;padding:7px 12px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap}
+nav button:hover{color:var(--text)}
+nav button.on{background:var(--panel);border-color:var(--line);color:var(--gold)}
+section{display:none;animation:fade .25s ease}
+section.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+h2{font-size:21px;margin:6px 0 14px;letter-spacing:-.01em}
+h3{font-size:15px;margin:26px 0 8px;color:var(--gold)}
+p{margin:0 0 12px}
+.lead{font-size:16px;color:var(--text)}
+.grid{display:grid;gap:12px}
+.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:1fr 1fr 1fr}.g4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:720px){.g2,.g3,.g4{grid-template-columns:1fr}nav{position:static}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px}
+.stat .n{font-size:26px;font-weight:800;color:var(--gold);letter-spacing:-.02em}
+.stat .l{font-size:12.5px;color:var(--dim);margin-top:3px}
+.stat .src{font-size:11px;color:var(--faint);margin-top:6px}
+.src a{color:var(--faint);text-decoration:underline}
+.pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:20px;border:1px solid;vertical-align:middle}
+.est{color:var(--amber);border-color:color-mix(in srgb,var(--amber) 45%,transparent);background:color-mix(in srgb,var(--amber) 12%,transparent)}
+.good{color:var(--green);border-color:color-mix(in srgb,var(--green) 45%,transparent);background:color-mix(in srgb,var(--green) 12%,transparent)}
+.opinion{border-left:3px solid var(--blue);background:color-mix(in srgb,var(--blue) 7%,transparent);padding:12px 14px;border-radius:0 10px 10px 0;margin:14px 0}
+.opinion b{color:var(--blue)}
+.danger{border-left:3px solid var(--red);background:color-mix(in srgb,var(--red) 8%,transparent);padding:12px 14px;border-radius:0 10px 10px 0;margin:14px 0}
+.danger b{color:var(--red)}
+.source{border-left:3px solid var(--gold2);background:color-mix(in srgb,var(--gold) 7%,transparent);padding:12px 14px;border-radius:0 10px 10px 0;margin:14px 0;font-size:14px}
+.tw{overflow-x:auto;margin:14px 0;border:1px solid var(--line);border-radius:12px}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:520px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--panel2);color:var(--dim);font-size:11.5px;text-transform:uppercase;letter-spacing:.06em;position:sticky;top:0}
+tr:last-child td{border-bottom:none}
+td .win{color:var(--green);font-weight:700}td .lose{color:var(--red)}td .tie{color:var(--amber)}
+ol.ins{padding-left:20px}ol.ins li{margin:8px 0}
+.step{display:flex;gap:12px;margin:10px 0}
+.step .k{flex:0 0 30px;height:30px;border-radius:50%;background:color-mix(in srgb,var(--gold) 16%,transparent);border:1px solid var(--gold2);color:var(--gold);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:13px}
+.step .b{flex:1}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.5px;background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:12px 14px;white-space:pre-wrap;color:var(--text)}
+dl dt{color:var(--gold);font-weight:700;margin-top:12px;font-size:14px}
+dl dd{margin:2px 0 0;color:var(--dim)}
+.tag{font-size:11px;color:var(--faint);letter-spacing:.05em;text-transform:uppercase}
+.hr{height:1px;background:var(--line);margin:22px 0}
+.foot{color:var(--faint);font-size:12px;margin-top:40px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body>
+<button class="themebtn" onclick="tg()">◐ theme</button>
+<div class="wrap">
+<header>
+  <div class="eyebrow">Soltrack · internal GTM brief</div>
+  <h1>US Aesthetic &amp; Dental Clinics</h1>
+  <div class="sub">Managed AI front desk (answer · qualify · book) + dormant-patient reactivation · 2026-07-25 · decision-grade, honesty-flagged</div>
+</header>
+
+<nav id="nav"></nav>
+
+<!-- ============ 1 THESIS ============ -->
+<section id="thesis" class="on">
+  <h2>Thesis</h2>
+  <p class="lead">The market is validated to the point of a public company and two unicorns, the pain is white-hot and universally acknowledged, decision-makers are cheaply reachable by cold email, and the core interaction is <b>task execution, not regulated medical advice</b>. The kill-switch does not fire. This is a <span class="pill good">GO</span>. The edge is not the AI, it is the <b>managed, done-for-you, human-monitored</b> delivery that answers the market's real objection: self-serve AI bots that plateau after the demo.</p>
+
+  <div class="grid g4" style="margin:18px 0">
+    <div class="stat"><div class="n">~164k</div><div class="l">US target practices across the four segments</div><div class="src">Census CBP + AmSpa + IBISWorld</div></div>
+    <div class="stat"><div class="n">~1 in 3</div><div class="l">inbound calls missed at a typical practice <span class="pill est">vendor-est</span></div><div class="src">Peerlogic / AgentZap</div></div>
+    <div class="stat"><div class="n">$425–$3.3k</div><div class="l">value of ONE missed new-patient call (dental, first-yr → lifetime)</div><div class="src">computed <span class="pill est">est</span></div></div>
+    <div class="stat"><div class="n">$249M</div><div class="l">annual revenue of Weave, a public incumbent — buyers pay</div><div class="src">CB Insights</div></div>
+  </div>
+
+  <h3>The five things that matter</h3>
+  <ol class="ins">
+    <li><b>Beachhead = med spas, proof-case = dental.</b> Med spas are the fastest-growing segment (+17.9% locations 2022→2023, AmSpa), carry premium pricing ($4–5k/mo vs dental $1.5–3k), are cosmetic-first (lighter PHI/compliance load), and are the least saturated at the <i>managed-service</i> tier. Dental is the largest raw base (~135k) and our existing outbound is already there, but it is the most incumbent-crowded (Weave, Arini, RevenueWell) — use it for the first before/after case study, scale on med spas.</li>
+    <li><b>The money hook is protecting demand they already bought.</b> Practices spend $100–$500 in ad spend to make the phone ring, then miss ~1 in 3 of those calls; ~78% of callers who hit voicemail hang up and ~85% never call back <span class="pill est">vendor-est</span>. The AI front desk recovers the highest-ROI dollar in the clinic — the patient whose call was already paid for.</li>
+    <li><b>Compliance is a moat, not a blocker.</b> HIPAA/BAA, TCPA/10DLC for outbound, two-party recording consent, and AI-disclosure law (CA AB 2905, $500/call) are all <i>configurational</i>. Our Retell stack already signs BAAs. This setup work is exactly what a small clinic will not do itself — it is the reason to hire a managed operator.</li>
+    <li><b>The market's objection is "flaky AI grift," and it is real.</b> Owners publicly report AI bots that made patients repeat their name and DOB and degraded over months. Our entire wedge is human-tuned, monitored, escalates-to-staff — sold as a service, not a tool you babysit.</li>
+    <li><b>TAM is not the constraint; message leverage is.</b> With ~164k reachable practices, volume outreach is viable. The job is to niche down per campaign (one sub-segment, one state) so the report hook lands specific.</li>
+  </ol>
+
+  <div class="opinion"><b>Reading guide.</b> ICP ranks the five sub-segments and calls the beachhead. Market &amp; Math holds the sourced TAM and the missed-call money table. Offer is the value-equation build + pricing. Copy is the report-interview outreach (the Heidar method) + the lead magnet. Play is the 90-day sequence. Risks is the compliance + delivery danger list. Glossary lets you talk to the market without sounding like a tourist.</div>
+</section>
+
+<!-- ============ 2 ICP ============ -->
+<section id="icp">
+  <h2>ICP — who to chase, where not to lead</h2>
+
+  <h3>The five tests (kill-switch)</h3>
+  <div class="tw"><table>
+    <tr><th>Test</th><th>Verdict</th><th>Evidence</th></tr>
+    <tr><td>1 · Need</td><td class="win">Pass</td><td>The phone is how a clinic earns new patients; the front desk is core, not peripheral.</td></tr>
+    <tr><td>2 · Pain</td><td class="win">Pass</td><td>~1 in 3 calls missed; replacing one front-desk hire costs $17,659–$70,638; turnover is an ADA-named headwind. <span class="pill est">vendor-est</span></td></tr>
+    <tr><td>3 · Money</td><td class="win">Pass</td><td>$425–$3,350 per missed dental call; ~$25k/mo at-risk first-year revenue per practice. <span class="pill est">est</span></td></tr>
+    <tr><td>4 · Demand</td><td class="win">Pass</td><td>Weave ($249M rev, public), Boulevard ($80M Series D, ~$800M val), Zenoti (~$1.5B), YC-funded Arini. Buyers pay.</td></tr>
+    <tr><td>5 · Permissibility <b>(kill-switch)</b></td><td class="win">Pass</td><td>Core interaction is answer/qualify/book — task execution, clinical questions escalate to humans. Not the practice of medicine. Gated by BAA/TCPA/disclosure (configurational).</td></tr>
+  </table></div>
+  <div class="opinion"><b>Kill-switch does not fire.</b> No axis scores the disqualifier ≤2. The vertical is entered.</div>
+
+  <h3>Master ranking — 5-axis rubric (/25)</h3>
+  <p class="tag">Pain acuity · Deal value · TAM/volume · Reachability · Permissibility. Chase ≥18.</p>
+  <div class="tw"><table>
+    <tr><th>#</th><th>Segment</th><th>Pain</th><th>Deal</th><th>TAM</th><th>Reach</th><th>Perm</th><th>Total</th><th>Note</th></tr>
+    <tr><td>1</td><td><b>General dental</b></td><td>5</td><td>4</td><td>5</td><td>5</td><td>4</td><td class="win">23</td><td>Largest base (~135k) + highest score, but <b>most saturated</b> (Weave/Arini/RevenueWell). Chase only with a hard managed/compliance differentiator. Best <i>first proof case</i>.</td></tr>
+    <tr><td>2</td><td><b>Med spas</b> ★</td><td>5</td><td>5</td><td>3</td><td>5</td><td>4</td><td class="win">22</td><td><b>Beachhead.</b> +18%/yr, premium $4–5k/mo, cosmetic = lighter PHI, least crowded at the managed tier, warm Dermis channel.</td></tr>
+    <tr><td>3</td><td>Plastic / cosmetic surgery</td><td>4</td><td>5</td><td>3</td><td>4</td><td>4</td><td class="win">20</td><td>Highest per-procedure value; ~13.4k practices, +2.8%/yr. Strong secondary.</td></tr>
+    <tr><td>4</td><td>Dental specialties (ortho)</td><td>4</td><td>5</td><td>2</td><td>4</td><td>4</td><td class="win">19</td><td>High case value ($5–6k ortho). Small base (~11k ortho). Niche play.</td></tr>
+    <tr><td>5</td><td>Dermatology</td><td>4</td><td>4</td><td>2</td><td>4</td><td>3</td><td class="tie">17</td><td>Smaller (~5.3k), mixed medical/cosmetic → heavier PHI. Do not lead here.</td></tr>
+  </table></div>
+
+  <div class="opinion"><b>Who to chase / where not to lead.</b> Lead the message on <b>med spas</b> (velocity + premium + lighter compliance) and use <b>general dental</b> to bank the first before/after case study (our outbound is already there, lower stakes). Do <b>not</b> lead with dermatology — the medical/cosmetic mix drags Permissibility and the base is small. Treat plastics/ortho as high-value niche campaigns once the med-spa script is proven.</div>
+</section>
+
+<!-- ============ 3 MARKET & MATH ============ -->
+<section id="math">
+  <h2>Market &amp; Math</h2>
+
+  <h3>TAM — firm counts (accounts to sell)</h3>
+  <div class="grid g4" style="margin-bottom:6px">
+    <div class="stat"><div class="n">~135,665</div><div class="l">general dental practices</div><div class="src"><a href="https://data.census.gov">Census CBP 2023</a> · &lt;0.5%/yr</div></div>
+    <div class="stat"><div class="n">~10,488</div><div class="l">med spas · <b>+17.9%/yr</b></div><div class="src"><a href="https://www.americanmedspa.org/news/2024-medical-spa-state-of-the-industry-executive-report-recap/">AmSpa 2024</a></div></div>
+    <div class="stat"><div class="n">~13,399</div><div class="l">plastic/cosmetic surgery practices</div><div class="src"><a href="https://www.ibisworld.com/united-states/number-of-businesses/plastic-surgeons/4157/">IBISWorld 2025</a> · +2.8%/yr</div></div>
+    <div class="stat"><div class="n">~5,302</div><div class="l">dermatology practices</div><div class="src"><a href="https://www.ibisworld.com/united-states/number-of-businesses/dermatologists/4168/">IBISWorld 2025</a> · +1.3%/yr</div></div>
+  </div>
+  <div class="source"><b>Market $ envelope.</b> US medical aesthetics ≈ <b>$7.62B (2024) → $16.38B by 2030, 13.6% CAGR</b> (<a href="https://www.prnewswire.com/news-releases/us-medical-aesthetics-market-worth-us16-38-billion-by-2030-with-13-6-cagr--marketsandmarkets-302424317.html">MarketsandMarkets</a>). The med-spa channel alone ranges $6.9B (report basis) to ~$14.7B (AmSpa revenue basis, 10,488 spas × $1.4M avg) <span class="pill est">est</span> — cite the range, not one number. <b>TAM is not the constraint;</b> volume outreach is viable, the job is message leverage.</div>
+  <p class="tag">Firm counts (locations) ≠ practitioner counts. ~202k active dentists, ~12k dermatologists, ~11k board-certified plastic surgeons — but "accounts to sell" is the lower location count.</p>
+
+  <h3>The money hook — value of one missed new-patient call</h3>
+  <p>Formula: <span class="mono" style="display:inline;padding:2px 6px">deal value × close rate</span>. Close rates are labeled estimates, anchored to the ~42–53% answered-call booking rate for dental.</p>
+  <div class="tw"><table>
+    <tr><th>Segment</th><th>Deal value</th><th>Close rate <span class="pill est">est</span></th><th>Missed call worth (first-yr)</th><th>Lifetime</th></tr>
+    <tr><td>Dental</td><td>$850 first-yr / $6,700 LTV</td><td>50%</td><td class="win">~$425</td><td>~$3,350</td></tr>
+    <tr><td>Med spa</td><td>$2,000/yr / $7,800 LTV</td><td>30%</td><td class="win">~$600</td><td>~$2,340</td></tr>
+    <tr><td>Dermatology (cosmetic)</td><td>$1,800/yr / $5,000 LTV</td><td>40%</td><td class="win">~$720</td><td>~$2,000</td></tr>
+  </table></div>
+  <div class="opinion"><b>Why it compounds.</b> The average dental practice misses ~300 calls/month and ~58% of missed-call interactions are new patients <span class="pill est">vendor-est, Peerlogic</span>. Even conservatively, that is <b>~$25,000/month in at-risk first-year revenue</b> per practice <span class="pill est">est</span> — many times a managed retainer. Deal-value sources: <a href="https://www.peerlogic.com/post/turning-missed-dental-phone-calls-into-profit">Peerlogic</a>, <a href="https://wonderfuldental.com/blogs/news/lifetime-value-of-a-dental-patient">Wonderful Dental</a>, <a href="https://alecanmarketing.com/blog/medical-spa-customer-lifetime-value/">Alecan</a>.</div>
+
+  <h3>Unit economics — the business case for us</h3>
+  <div class="grid g4">
+    <div class="stat"><div class="n">$2–5k/mo</div><div class="l">retainer per clinic (dental → med spa)</div></div>
+    <div class="stat"><div class="n">~$200–500</div><div class="l">infra cost / client / mo (Retell+Twilio+LLM) <span class="pill est">est</span></div></div>
+    <div class="stat"><div class="n">~85–90%</div><div class="l">gross margin once templated <span class="pill est">est</span></div></div>
+    <div class="stat"><div class="n">~15–25</div><div class="l">clients one account manager runs <span class="pill est">est</span></div></div>
+  </div>
+  <div class="source"><b>Reactivation model (our locked figures).</b> Reference clinic ~800 dormant contacts: 7% reactivation, $400 avg ticket, ~56 bookings/cycle, ~$22,400/cycle, 4 cycles/yr → <b>~$89,600/yr recovered</b>, ~4–5× ROI at an $18.5k–$25k annual band. ACV lands $18.5k–$60k depending on segment.</div>
+
+  <h3>Pricing anchor</h3>
+  <div class="tw"><table>
+    <tr><th>Tier</th><th>Shape</th><th>Price</th></tr>
+    <tr><td>Anchor (rarely bought)</td><td>Multi-location / enterprise, all channels + dedicated success</td><td>$7,500+/mo</td></tr>
+    <tr><td><b>Core</b></td><td>Setup one-time + managed monthly (front desk + reactivation)</td><td>$1,000–2,500 setup + $2,000–5,000/mo</td></tr>
+    <tr><td>Kicker</td><td>Per booked new-patient or per reactivated patient</td><td>$/qualified result</td></tr>
+  </table></div>
+</section>
+
+<!-- ============ 4 OFFER ============ -->
+<section id="offer">
+  <h2>Offer — the value equation</h2>
+  <p>Increase the top two, decrease the bottom two.</p>
+  <div class="grid g2">
+    <div class="card"><h3 style="margin-top:0">↑ Dream outcome</h3><p>Sell the <b>recovered revenue</b>, not "AI answering." Name it with weight: <b>the Clinic Front-Desk OS</b> — every call answered, qualified, and booked, plus your dormant patients reactivated. The promise is "stop paying to make the phone ring and then not answering it."</p></div>
+    <div class="card"><h3 style="margin-top:0">↑ Perceived likelihood</h3><p>Pay-on-result pilot: <b>"we recover N booked new-patient calls in 30 days before you pay setup,"</b> plus an SLA credit-back. Framing: <i>"we take the tech risk, you take the volume risk."</i> Human-monitored and managed — the direct answer to the "flaky AI" objection.</p></div>
+    <div class="card"><h3 style="margin-top:0">↓ Time delay</h3><p>Live in days, first recovered booking in week one. State both numbers. Speed to first result is the whole sell in a speed-to-lead market.</p></div>
+    <div class="card"><h3 style="margin-top:0">↓ Effort &amp; sacrifice</h3><p>Pure done-for-you: they hand over booking criteria + PMS access; we build, host, monitor, and carry the compliance (BAA, 10DLC, disclosure). Every step pushed back on the clinic is a discount we take without getting paid.</p></div>
+  </div>
+
+  <h3>The guarantee (with teeth)</h3>
+  <div class="source">"We recover a booked new patient in your first 30 days or you don't pay setup." Define "booked new patient" tightly, in writing (a first-time caller who scheduled and is confirmed in your PMS). A guarantee pegged to <i>their</i> conversion inherits a variable we don't control — so guarantee the <b>recovered booking</b> (which our answering controls), not their downstream close.</div>
+
+  <h3>Differentiation vs the field</h3>
+  <div class="tw"><table>
+    <tr><th>Player type</th><th>What they are</th><th>Our wedge</th></tr>
+    <tr><td>Self-serve AI bots (Arini, Newo, Viva)</td><td>DIY tools you configure + babysit</td><td class="win">Managed + human-tuned + monitored — no babysitting</td></tr>
+    <tr><td>Human answering services (Ruby, PATLive)</td><td>Per-minute, no reactivation, no PMS depth</td><td class="win">24/7 at flat cost + database reactivation + CRM sync</td></tr>
+    <tr><td>CRM platforms (Boulevard, Zenoti, Weave)</td><td>Seat you already pay for, AI bolted on</td><td class="tie">We layer on their stack; long-term bundle risk — win on service depth + compliance</td></tr>
+  </table></div>
+
+  <div class="opinion"><b>Sober-buyer adaptation.</b> Dentists are conservative — dial down swagger. Lead with <b>compliance</b> (signed BAA, HIPAA, escalates to your staff), a <b>named local proof</b>, and "managed, monitored" language. Save the aggressive naming for med-spa owners, who are marketing-literate and respond to premium framing.</div>
+</section>
+
+<!-- ============ 5 COPY ============ -->
+<section id="copy">
+  <h2>Copy — lead magnet + the report-interview outreach</h2>
+
+  <h3>Lead-magnet mechanic — give away the diagnosis</h3>
+  <div class="source">The <b>Missed-Call Revenue Leak</b> report (our lead-leak-finder). Show the prospect their own leak with their own data: call their line after hours, log what happened, and put a dollar figure on it for a practice their size in their state. The pain is the pitch. CTA = "want the findings?" — never "book a call." <b>Do not covertly record their live system and send it back</b> — it reads as a gotcha and has recording-consent exposure. Build the magnet from public data + what they hand you.</div>
+
+  <h3>The outreach — Heidar's report-interview method (person-led, no pitch)</h3>
+  <p class="tag">Reach out as Mikail / Ahmad doing research, not as an agency. Outcome language, never lead with "AI". Personalize by state + clinic. All copy through /humanizer, no dashes/semicolons.</p>
+  <div class="mono">Subject: featuring {{ClinicName}} in the report?
+
+Hi {{FirstName}},
+
+I'm putting together a short report on how {{State}} {{med spas / dental practices}} handle after-hours and missed calls, since it's where most clinics quietly lose new patients. Yours came up when I was looking around {{City}}.
+
+Would you be open to a 30 to 40 minute interview for it? No pitch, nothing to buy. I'll send you the finished report on your clinic and the clip is yours to keep.
+
+If you're up for it, just reply and I'll get you scheduled.
+
+{{Mikail / Ahmad}}</div>
+
+  <h3>5-day follow-up sequence</h3>
+  <div class="step"><div class="k">1</div><div class="b"><b>Day 1 — invite</b> (above).</div></div>
+  <div class="step"><div class="k">3</div><div class="b"><b>Day 3 — bump.</b> "Floating this back up. Same ask, about 30 minutes on how {{ClinicName}} handles calls, and the report is yours."</div></div>
+  <div class="step"><div class="k">5</div><div class="b"><b>Day 5 — proof angle.</b> "Quick data point from the report so far: {{State}} clinics we've looked at miss roughly 1 in 3 calls, most after hours. Curious where {{ClinicName}} lands."</div></div>
+  <div class="step"><div class="k">7</div><div class="b"><b>Day 7 — one of the first.</b> "Wrapping the first round of interviews, wanted to include {{ClinicName}} before it's done."</div></div>
+  <div class="step"><div class="k">12</div><div class="b"><b>Day 12 — breakup.</b> "I'll leave it here. If you ever want your clinic in the report, just reply."</div></div>
+  <div class="opinion"><b>The sell comes after the interview, never on it.</b> Deliver the report + a clip, ask "is this accurate, anything I missed?" → relationship → only then, softly: "we've got something that fixes exactly the gaps we found, want to look?"</div>
+</section>
+
+<!-- ============ 6 PLAY ============ -->
+<section id="play">
+  <h2>Play — channels + 90 days to 10 clients</h2>
+
+  <div class="opinion"><b>Niche down per campaign.</b> One sub-segment, one state, per campaign. "{{State}} med spas" out-converts "clinics" because the report hook and the missed-call math land specific. TAM is big enough that focus costs nothing.</div>
+
+  <h3>Four channels, sequenced (not parallel from day one)</h3>
+  <div class="step"><div class="k">1</div><div class="b"><b>Warm (days 1–14).</b> The Dermis channel + local/known names → land the first 5 case-study clients at low stakes (dental).</div></div>
+  <div class="step"><div class="k">2</div><div class="b"><b>Cold (days 15–90).</b> Volume email on the report-interview method + the leak-finder magnet. Med-spa lead, dental for proof. Scraped, verified (Bouncer), open-tracking OFF.</div></div>
+  <div class="step"><div class="k">3</div><div class="b"><b>Content (always on).</b> Publish the failure stories the market recognises — missed-call leaks, front-desk turnover — on LinkedIn (business/AI only), same-day repost to X.</div></div>
+  <div class="step"><div class="k">4</div><div class="b"><b>Paid (last).</b> Scale only after a validated script and a healthy LTGP:CAC (3:1 floor).</div></div>
+
+  <h3>90-day plan</h3>
+  <div class="tw"><table>
+    <tr><th>Window</th><th>Goal</th><th>Move</th></tr>
+    <tr><td>Days 1–30 · Proof</td><td>5 case studies</td><td>Fixed daily outreach number; land 5 pilots; fix the offer on real rejections. Dental first (lower stakes).</td></tr>
+    <tr><td>Days 31–60 · Automate</td><td>500–1,000 touches/day</td><td>Tool the pipeline; turn every win into a LinkedIn post. Med-spa campaigns come online.</td></tr>
+    <tr><td>Days 61–90 · Optimise the constraint</td><td>10 clients</td><td>Not booking → fix the magnet. Booking not closing → fix the interview→report→soft-pitch loop. Closing but drowning → first account manager.</td></tr>
+  </table></div>
+</section>
+
+<!-- ============ 7 RISKS ============ -->
+<section id="risks">
+  <h2>Honest risks</h2>
+
+  <div class="danger"><b>Regulatory — must-do, not optional.</b> A call-handling agent touches PHI on nearly every call → a signed <b>BAA is mandatory</b> with each clinic and with every subprocessor (Retell signs BAAs — the enabler). Outbound reactivation needs <b>TCPA consent + 10DLC A2P registration</b> (healthcare = high-scrutiny vetting) → scope outbound to the clinic's own consented patients, not cold. <b>Two-party recording consent</b> in ~15 states + <b>AI-disclosure</b> (CA AB 2905, $500/undisclosed call) → build "you're speaking with an AI assistant" into the opener by default. <span class="pill est">sources: Retell, Infobip, Dialzara, Thoughtly</span></div>
+
+  <div class="danger"><b>Delivery — the "grift" risk is real.</b> Owners publicly report AI bots that made patients repeat name/DOB and degraded over months ("this isn't working… the longer conversations go, the worse it performs"). If our AI plateaus, we become the objection. Mitigation = the entire model: human-tuned, monitored, escalates clinical/edge cases to staff, and we own the SLA.</div>
+
+  <div class="opinion"><b>Saturation (opinion).</b> Dental is crowded (Weave, Arini, RevenueWell). The bigger structural threat is the CRM platforms (Boulevard $80M/$800M, Zenoti ~$1.5B) bundling AI reception into a seat clinics already pay for. Counter by leading med spas (less crowded at the managed tier) and winning on service depth + compliance, which a platform bolt-on can't match.</div>
+
+  <div class="opinion"><b>Data quality (opinion).</b> Nearly every missed-call / loss-rate / CPA stat in this brief is vendor/agency-sourced — there is no neutral academic benchmark. Present them as ranges, and in a live pitch lead with the prospect's <b>own</b> numbers (from the leak-finder), not ours.</div>
+
+  <div class="source"><b>Highest-leverage move.</b> Nail the med-spa managed + compliance + local-proof wedge and get one lighthouse before/after case study. Everything downstream (the report hook, the guarantee, the content) gets sharper the moment there is one named clinic with a recovered-revenue number.</div>
+</section>
+
+<!-- ============ 8 GLOSSARY ============ -->
+<section id="glossary">
+  <h2>Glossary — talk to the market without sounding like a tourist</h2>
+
+  <h3>The call → book → reactivate flow</h3>
+  <div class="mono">Inbound call ──▶ AI answers (with AI disclosure) ──▶ qualifies (new vs existing, reason, insurance)
+        ──▶ books into the PMS / calendar ──▶ clinical or urgent question? ──▶ escalate to staff
+Dormant patient ──▶ consented reactivation text/call ──▶ re-book ──▶ CRM/calendar/payments stay in sync</div>
+
+  <dl>
+    <dt>PMS</dt><dd>Practice Management System — the clinic's core software (Dentrix, Open Dental, Eaglesoft in dental; Boulevard, Zenoti, Mangomint in med spas). The AI must book into it.</dd>
+    <dt>DSO</dt><dd>Dental Support Organization — a group that owns/operates multiple practices. Buys centrally; found on LinkedIn (unlike solo owners).</dd>
+    <dt>Med spa</dt><dd>Medical spa — aesthetic clinic offering injectables, lasers, skin treatments under medical supervision. Cosmetic-first, cash-pay, premium.</dd>
+    <dt>Injectables</dt><dd>Botox/neuromodulators + dermal fillers — the volume driver of med-spa revenue (9.48M + 5.29M procedures in 2023, ASPS).</dd>
+    <dt>Recall / reactivation</dt><dd>Bringing lapsed or dormant patients back in. "Haven't seen you in X months" — the second half of our product.</dd>
+    <dt>No-show</dt><dd>A booked patient who doesn't arrive. Reducing it is a headline metric for the CRM platforms.</dd>
+    <dt>Speed-to-lead</dt><dd>Time from inquiry to first response. The 5-minute rule (MIT/InsideSales, ~2007) and HBR 2011 — foundational but dated; the vertical-specific missed-call data is the current evidence.</dd>
+    <dt>LTV</dt><dd>Lifetime value of a patient — dental ~$6,700, med spa ~$7,800 blended. The number behind reactivation ROI.</dd>
+    <dt>PHI · BAA</dt><dd>Protected Health Information · Business Associate Agreement — the HIPAA contract required because the AI handles patient data. We sign one per clinic and per subprocessor.</dd>
+    <dt>TCPA · 10DLC</dt><dd>Telephone Consumer Protection Act · the A2P texting registration. Governs outbound reactivation — requires prior consent + registered messaging.</dd>
+    <dt>CPA</dt><dd>Cost per acquired patient — $80–$500 dental, $200–$300 med spa. The number our "recover demand you already bought" pitch undercuts.</dd>
+  </dl>
+
+  <div class="foot">
+    Sources span Census County Business Patterns, ADA Health Policy Institute, AmSpa 2024 State of the Industry, IBISWorld, ASPS, MarketsandMarkets, plus vendor call-tracking studies (Peerlogic, AgentZap) flagged <span class="pill est">vendor-est</span> throughout. TAM firm-count is best-available establishment data; an exact Apify <span class="mono" style="display:inline;padding:1px 5px">countOnly</span> query would tighten it. Every quantitative claim is sourced inline or flagged. Internal strategy document — not for external distribution.
+  </div>
+</section>
+
+</div>
+<script>
+var TABS=[["thesis","Thesis"],["icp","ICP"],["math","Market & Math"],["offer","Offer"],["copy","Copy"],["play","Play"],["risks","Honest Risks"],["glossary","Glossary"]];
+var nav=document.getElementById('nav');
+TABS.forEach(function(t,i){var b=document.createElement('button');b.textContent=t[1];b.className=i===0?'on':'';b.onclick=function(){go(t[0],b)};nav.appendChild(b)});
+function go(id,btn){document.querySelectorAll('section').forEach(function(s){s.classList.toggle('on',s.id===id)});document.querySelectorAll('#nav button').forEach(function(x){x.classList.remove('on')});btn.classList.add('on');window.scrollTo(0,0)}
+function tg(){var r=document.documentElement;var n=r.getAttribute('data-theme')==='dark'?'light':'dark';r.setAttribute('data-theme',n);try{localStorage.setItem('mi-theme',n)}catch(e){}}
+(function(){try{var s=localStorage.getItem('mi-theme');if(s)document.documentElement.setAttribute('data-theme',s);else if(window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches)document.documentElement.setAttribute('data-theme','light')}catch(e){}})();
+</script>
+</body>
+</html>
